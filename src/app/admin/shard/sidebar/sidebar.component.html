@@ -1,0 +1,37 @@
+<div class="navbar_raw">
+  <div class="top">
+      <mat-icon [inline]='true'>notifications_none</mat-icon>
+  </div>
+  <div class="user">
+      <img src="https://www.paperblog.gamliot.com/wp-content/uploads/2020/05/admin-settings-male.png" alt="">
+      <h4 class="name">admin</h4>
+      <p class="mail">admin@gmail.com</p>
+  </div>
+  <div class="menu_raw">
+      <div class="menu-head-raw">
+          <span>dashboard</span>
+      </div>
+      <div class="menu-item-raw">
+          <button mat-button class="menu-button-raw" [routerLink]="['/dashboard']">
+              <mat-icon>dashboard</mat-icon>
+              <span>Home</span>
+          </button>
+          <button mat-button class="menu-button-raw" [routerLink]="['/posts']">
+              <mat-icon>message</mat-icon>
+              <span>Posts</span>
+          </button>
+          <button mat-button class="menu-button-raw">
+              <mat-icon>comment</mat-icon>
+              <span>Comments</span>
+          </button>
+          <button mat-button class="menu-button-raw">
+              <mat-icon>pages</mat-icon>
+              <span>Pages</span>
+          </button>
+          <button mat-button class="menu-button-raw">
+              <mat-icon>settings</mat-icon>
+              <span>Settings</span>
+          </button>
+      </div>
+  </div>
+</div>
