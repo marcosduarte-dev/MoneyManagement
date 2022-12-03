@@ -1,0 +1,45 @@
+<!--
+<div class="card mt-1">
+  <div class="card-header">
+    Bancon Inter
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card mt-4">
+  <div class="card-header">
+    C6 Bank
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card mt-4">
+  <div class="card-header">
+    Carteira
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+-->
+
+<div *ngFor="let conta of contas">
+  <div class="card mt-1">
+    <div class="card-header">
+      {{ conta.nome_conta }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ conta.tipo_conta }}</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
