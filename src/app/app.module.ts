@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import { DefaultComponent } from './admin/default/default.component';
 import { SidebarComponent } from './admin/shard/sidebar/sidebar.component';
 import { ContasComponent } from './admin/Components/contas/contas.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './public/login/login.component';
+import { ProfileComponent } from './public/profile/profile.component';
 
 const Ux_modules = [
   MatButtonModule,
@@ -26,6 +29,8 @@ const Ux_modules = [
     DefaultComponent,
     SidebarComponent,
     ContasComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,8 @@ const Ux_modules = [
     MatButtonModule,
     Ux_modules,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
