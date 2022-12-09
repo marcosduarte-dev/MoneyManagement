@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +26,8 @@ const Ux_modules = [
   MatToolbarModule,
 ];
 
+const primeng_modules = [CardModule, InputTextModule, ButtonModule];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +43,7 @@ const Ux_modules = [
     BrowserAnimationsModule,
     MatButtonModule,
     Ux_modules,
+    primeng_modules,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
