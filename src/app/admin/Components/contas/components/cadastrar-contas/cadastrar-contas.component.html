@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+  <div class="grid p-fluid">
+      <div class="col-12 md:col-12">
+        <p-dropdown [options]="tiposdeContas" placeholder="Selecione um tipo de conta" optionLabel="tipo" optionValue="tipo"
+        [showClear]="true" formControlName="tipo_conta"></p-dropdown>
+      </div>
+
+    <div class="col-12 md:col-12">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="Nome da Conta" formControlName="nome_conta">
+        </div>
+    </div>
+
+    <div class="p-field p-col-12 md:col-12">
+      <p-inputNumber formControlName="saldo_inicial" mode="currency" currency="BRL" locale="pt-BR"></p-inputNumber>
+    </div>
+
+    <div>
+      <p-button icon="pi pi-check" label="Cadastrar" class="p-button-text" (onClick)="onCadastrar()"></p-button>
+    </div>
+  </div>
+</form>

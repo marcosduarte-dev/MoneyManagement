@@ -1,47 +1,18 @@
-<!--
-<div class="card mt-1">
-  <div class="card-header">
-    Bancon Inter
+  <div *ngFor="let conta of contas" class="flex justify-content-center align-items-center">
+  <p-card header="{{ conta.nome_conta }}" [style]="{'width': '45rem', 'margin-top': '2em'}">
+    <p><b>Tipo de Conta: </b> {{ conta.tipo_conta }}</p>
+    <p><b>Receitas: </b> {{ conta.tipo_conta }} </p>
+    <p><b>Despesas: </b> {{ conta.tipo_conta }} </p>
+    <ng-template pTemplate="footer">
+      <p><b>Saldo Atual: </b> {{ conta.saldo_inicial }}</p>
+    </ng-template>
+  </p-card>
   </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card mt-4">
-  <div class="card-header">
-    C6 Bank
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card mt-4">
-  <div class="card-header">
-    Carteira
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
--->
 
-<div class="container">
-  <div *ngFor="let conta of contas">
-    <div class="card mt-1">
-      <div class="card-header">
-        {{ conta.nome_conta }}
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">{{ conta.tipo_conta }}</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+  <div class="absolute bottom-10 right-5">
+    <button pButton type="button" icon="pi pi-plus" class="p-button-raised p-button-rounded" (click)="menu.toggle($event)"></button>
   </div>
-</div>
+
+  <p-menu #menu [popup]="true" [model]="items" appendTo="body"></p-menu>
+
+  <p-toast></p-toast>

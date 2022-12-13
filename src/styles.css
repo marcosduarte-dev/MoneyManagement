@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bottom-10 {
+  bottom: 10%;
+}
+.right-5 {
+  right: 5%;
+}
+.p-card-content {
+  padding-bottom: 0rem!important;
+}

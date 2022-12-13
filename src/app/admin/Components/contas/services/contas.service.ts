@@ -17,4 +17,12 @@ export class ContasService {
   getAll(): Observable<ContasModel[]> {
     return this.httpClient.get<ContasModel[]>(this.baseUrl);
   }
+
+  getByUserId(id_user: Number): Observable<ContasModel[]> {
+    return this.httpClient.get<ContasModel[]>(this.baseUrl + `?id_user=${id_user}`);
+  }
+
+  cadastrar(conta: ContasModel): Observable<ContasModel>{
+    return this.httpClient.post<ContasModel>(this.baseUrl, conta)
+  }
 }
