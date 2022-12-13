@@ -48,6 +48,7 @@ export class ContasComponent implements OnInit{
       items: [
           {label: 'Receitas', icon: 'pi pi-fw pi-plus',},
           {label: 'Despesas', icon: 'pi pi-fw pi-minus'},
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           {label: 'Contas', icon: 'pi pi-fw pi-wallet', command: (onclick)=> {this.showCadastrarContas()}},
       ]
     },

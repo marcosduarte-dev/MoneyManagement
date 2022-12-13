@@ -10,7 +10,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginComponent implements OnInit{
 
-  logado: boolean = false;
+  logado = false;
 
   form!: FormGroup;
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ContasModel } from '../../models/contasModel';
 import { ContasService } from '../../services/contas.service';
@@ -11,10 +11,10 @@ import { ContasService } from '../../services/contas.service';
   providers: [DialogService]
 })
 export class CadastrarContasComponent implements OnInit{
-  saldoInicial: Number = 0;
-  tipodeContaSelecionado!: String;
-  nomeConta!: String;
-  cadastrou: boolean = false;
+  saldoInicial = 0;
+  tipodeContaSelecionado!: string;
+  nomeConta!: string;
+  cadastrou = false;
 
   contaParaCadastrar: ContasModel = {} as ContasModel;
 
