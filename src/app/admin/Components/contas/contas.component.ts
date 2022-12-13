@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem, MessageService } from 'primeng/api';
 import { DialogService } from 'primeng/dynamicdialog';
 import { CadastrarContasComponent } from './components/cadastrar-contas/cadastrar-contas.component';
@@ -16,11 +16,11 @@ export class ContasComponent implements OnInit{
   contas: ContasModel[] = [];
   items!: MenuItem[];
 
-  showContas: boolean = false;
+  showContas = false;
 
-  saldoInicial: Number = 0;
-  tipodeContaSelecionado!: String;
-  nomeConta!: String;
+  saldoInicial = 0;
+  tipodeContaSelecionado!: string;
+  nomeConta!: string;
 
   contaParaCadastrar: ContasModel = {} as ContasModel;
 
