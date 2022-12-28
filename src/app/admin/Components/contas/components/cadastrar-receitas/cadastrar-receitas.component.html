@@ -1,0 +1,26 @@
+<form [formGroup]="form">
+  <div class="grid p-fluid">
+      <div class="col-12 md:col-12">
+        <p-dropdown [options]="contasDoUsuario" placeholder="Selecione uma conta" optionLabel="nome_conta" optionValue="id_conta"
+        [showClear]="true" formControlName="id_conta"></p-dropdown>
+      </div>
+
+    <div class="p-field p-col-12 md:col-12">
+      <p-inputNumber formControlName="valor" mode="currency" currency="BRL" locale="pt-BR"></p-inputNumber>
+    </div>
+
+    <div class="p-field p-col-12 md:col-12">
+      <label for="dataRecebimento">Data Recebido</label>
+      <p-calendar formControlName="data_receita" inputId="dataRecebimento" dateFormat="dd.mm.yy" [touchUI]="true"></p-calendar>
+    </div>
+
+    <div class="p-field p-col-12 md:col-12">
+      <label for="dataLancamento">Data Lançamento</label>
+      <p-calendar formControlName="data_lancamento" inputId="dataLancamento" dateFormat="dd.mm.yy" [touchUI]="true"></p-calendar>
+    </div>
+
+    <div>
+      <p-button icon="pi pi-check" label="Cadastrar" class="p-button-text" (onClick)="onCadastrar()"></p-button>
+    </div>
+  </div>
+</form>

@@ -1,10 +1,10 @@
   <div *ngFor="let conta of contas" class="flex justify-content-center align-items-center">
   <p-card header="{{ conta.nome_conta }}" [style]="{'width': '45rem', 'margin-top': '2em'}">
     <p><b>Tipo de Conta: </b> {{ conta.tipo_conta }}</p>
-    <p><b>Receitas: </b> {{ conta.tipo_conta }} </p>
+    <p><b>Receitas: </b> R$ {{ conta.receitaTotal }} </p>
     <p><b>Despesas: </b> {{ conta.tipo_conta }} </p>
     <ng-template pTemplate="footer">
-      <p><b>Saldo Atual: </b> {{ conta.saldo_inicial }}</p>
+      <p><b>Saldo Atual: </b> R$ {{ conta.saldo_inicial }}</p>
     </ng-template>
   </p-card>
   </div>

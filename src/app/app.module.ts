@@ -13,6 +13,7 @@ import {DynamicDialogModule} from 'primeng/dynamicdialog';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {ToastModule} from 'primeng/toast';
+import {CalendarModule} from 'primeng/calendar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './public/login/login.component';
 import { ProfileComponent } from './public/profile/profile.component';
 import { CadastrarContasComponent } from './admin/Components/contas/components/cadastrar-contas/cadastrar-contas.component';
+import { CadastrarReceitasComponent } from './admin/Components/contas/components/cadastrar-receitas/cadastrar-receitas.component';
 
 const Ux_modules = [
   MatButtonModule,
@@ -49,6 +51,7 @@ const primeng_modules = [
   MessageModule,
   MessagesModule,
   DynamicDialogModule,
+  CalendarModule,
 ];
 
 @NgModule({
@@ -60,6 +63,7 @@ const primeng_modules = [
     LoginComponent,
     ProfileComponent,
     CadastrarContasComponent,
+    CadastrarReceitasComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ Segue link para o projeto do back: https://github.com/marcosduarte-dev/APIMoneyM
 * <b>Login</b>: Realização de Login
 * <b>Listar contas do banco</b>: Listar contas cadastradas por um usuário no banco de dados
 * <b>Cadastro contas do banco</b>: Cadastrar contas do banco para o seu usuário
+* <b>Adicionar Receitas </b>: Modal para adicionar receitas para uma conta do usuário
 
 ## :wrench: Tecnologias utilizadas
 * Angular;

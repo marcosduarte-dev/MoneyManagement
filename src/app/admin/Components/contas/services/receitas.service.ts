@@ -16,4 +16,8 @@ export class ReceitasService {
   getByContaId(id_conta: string): Observable<ReceitasModel[]> {
     return this.httpClient.get<ReceitasModel[]>(this.baseUrl+`?id_conta=${id_conta}`);
   }
+
+  cadastrar(receita: ReceitasModel): Observable<ReceitasModel>{
+    return this.httpClient.post<ReceitasModel>(this.baseUrl, receita)
+  }
 }
